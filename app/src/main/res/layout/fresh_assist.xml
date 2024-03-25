@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xinshengzhinan"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/zhengli"
+        android:text="@string/zhengli"
+        style="@style/btn_style"/>
+
+    <Button
+        android:id="@+id/dida"
+        android:text="@string/dida"
+        style="@style/btn_style" />
+
+    <Button
+        android:id="@+id/ruxiao"
+        android:text="@string/ruxiao"
+        style="@style/btn_style" />
+
+    <Button
+        android:id="@+id/woshi"
+        android:text="@string/woshi"
+        style="@style/btn_style" />
+
+    <Button
+        android:id="@+id/shenghuo"
+        android:text="@string/shenghuo"
+        style="@style/btn_style" />
+
+    <Button
+        android:id="@+id/jiejiao"
+        android:text="@string/jiejiao"
+        style="@style/btn_style"/>
+
+    <Button
+        android:id="@+id/qinlian"
+        android:text="@string/qinlian"
+        style="@style/btn_style"/>
+
+    <Button
+        android:id="@+id/xuezhang"
+        android:text="@string/xuezhang"
+        style="@style/btn_style"/>
+
+</LinearLayout>

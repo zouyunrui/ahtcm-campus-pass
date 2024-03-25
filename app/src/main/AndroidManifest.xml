@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="iet.jxufe.cn.myapp">
+
+    <application
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="安中大通——zouyunrui"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App"
+        tools:replace="icon,label">
+        <!--<activity android:name="iet.jxufe.cn.myapp.loginregister.LoginActivity"
+            android:label="@string/login">
+
+        </activity>
+-->
+        <activity
+
+            android:name="iet.jxufe.cn.myapp.MainActivity"
+            android:exported="true">
+
+            <meta-data
+                android:name="TencentMapSDK"
+                android:value="F2TBZ-QZCCG-W7RQ3-QZLGK-JME6O-EDBSL" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--讯飞模块 -->
+        <activity
+            android:name="iet.jxufe.cn.myapp.MappingActivity"
+            android:label="小地图"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.xunfei.QaActivity"
+            android:label="Qa问答"></activity>
+
+        <!--图片生成 -->
+        <activity
+            android:name="iet.jxufe.cn.myapp.images.ChatActivity"
+            android:label="图片生成"></activity>
+        <!-- 登录注册模块 -->
+        <activity
+            android:name="iet.jxufe.cn.myapp.loginregister.LoginActivity"
+            android:label="d登录"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.loginregister.RegisterActivity"
+            android:label="注册"></activity>
+        <!-- 游玩合肥模块 -->
+        <activity
+            android:name="iet.jxufe.cn.myapp.youwanhefei.SceneryActivity"
+            android:label="@string/scenery"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.youwanhefei.SceneryShowActivity"
+            android:label="@string/scenery_item"></activity>
+
+        <!-- 校园生活模块 -->
+        <activity
+            android:name="iet.jxufe.cn.myapp.campuslife.CampusLifeActivity"
+            android:label="@string/campuslife"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.campuslife.CampusSceneryActivity"
+            android:label="@string/campusScenery"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.campuslife.FreshAssistActivity"
+            android:label="@string/freshAssist"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.campuslife.DetailInfoActivity"
+            android:label="@string/dida"></activity>
+        <activity
+            android:name="iet.jxufe.cn.myapp.campuslife.CampusBuildActivity"
+            android:label="@string/campusBuild"></activity>
+        <!--<meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="HuZPgpP6cBW8jGlTOqtB4sqvFhKfx3Rv" />-->
+
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--腾讯地图 SDK 要求的权限(开始)-->
+    <!--访问网络获取地图服务-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--检查网络可用性-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WiFi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--需要外部存储写权限用于保存地图缓存-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--获取 device id 辨别设备-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--腾讯地图 SDK 要求的权限(结束)-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--录音和写磁盘权限-->
+
+
+</manifest>

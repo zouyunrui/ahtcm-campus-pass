@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+
+    buildToolsVersion "32.0.0"
+
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+    defaultConfig {
+
+        applicationId "iet.jxufe.cn.campusassist"
+        //targetSdkVersion 30 // 添加了targetSdkVersion的配置，建议与compileSdkVersion保持一致
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.amap.api:search:latest.integration'
+    //Google推荐的EasyPermission库
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.blankj:utilcodex:1.30.6'
+    //implementation 'mysql:mysql-connector-java:8.0.5' // 修改了mysql-connector-java的依赖格式，添加了前缀'mysql:'
+    implementation 'androidx.appcompat:appcompat:1.4.1' // 升级了appcompat版本
+    implementation 'com.google.android.material:material:1.6.0' // 升级了material版本
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // 升级了constraintlayout版本
+    implementation 'com.google.firebase:firebase-inappmessaging:20.4.0'
+    implementation 'com.google.android.gms:play-services-identity:18.0.1'
+    implementation files('libs/SparkChain.aar')
+    implementation files('src\\main\\jniLibs\\tencent-mapsdk-android-official-release.5.4.1.facf3901.jar')
+    implementation files('src\\main\\jniLibs\\bdasr_V3_20210628_cfe8c44.jar')
+    implementation files('src\\main\\jniLibs\\mysql-connector-java-5.0.7.jar')
+    testImplementation 'junit:junit:4.13.2' // 升级了JUnit版本
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5' // 升级了AndroidX测试库的版本
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1' // 升级了Espresso版本
+    implementation 'com.lovedise:permissiongen:0.0.6'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+
+}

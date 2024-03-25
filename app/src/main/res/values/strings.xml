@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">安中大通</string>
+    <string name="title_activity_main">安中大通</string>
+    <string name="xiaoxun">校训：至精至诚 唯是唯新</string>
+
+
+
+
+
+
+    <!-- 游玩模块 -->
+    <string name="scenery">游玩合肥</string>
+    <string name="scenery_item">景点介绍</string>
+
+
+
+    <!-- 学校生活 -->
+    <string name="campuslife">学校生活</string>
+    <string name="campusScenery">校园风景</string>
+    <string name="freshAssist">新生指南</string>
+    <string name="campusBuild">校区平面图</string>
+
+    <!-- 新生指南 -->
+
+    <string name="zhengli">整理新装</string>
+    <string name="dida">抵达目的地</string>
+    <string name="ruxiao">入校第一站</string>
+    <string name="woshi">我是一个兵</string>
+    <string name="shenghuo">生活万花筒</string>
+    <string name="jiejiao">结交新朋友</string>
+    <string name="qinlian">勤练有补助</string>
+    <string name="xuezhang">学长学姐寄语</string>
+    <string name="goBack">返回</string>
+    <string name="login" />
+    <string name="register" />
+</resources>
